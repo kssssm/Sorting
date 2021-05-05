@@ -176,4 +176,21 @@ public static void main(String[] args) {
     
 ```
 
-## 
+## 성능 평가
+
+배열의 크기에 따른 성능
+### 100
+
+<img width="184" alt="스크린샷 2021-05-05 오후 3 26 09" src="https://user-images.githubusercontent.com/81538527/117108378-08ebe180-adbe-11eb-8a67-af8c497fc3c6.png">
+
+### 1000
+
+<img width="190" alt="스크린샷 2021-05-05 오후 3 26 28" src="https://user-images.githubusercontent.com/81538527/117108391-0db09580-adbe-11eb-8905-01eba29b9723.png">
+
+### 10000
+
+<img width="192" alt="스크린샷 2021-05-05 오후 3 26 44" src="https://user-images.githubusercontent.com/81538527/117108396-1012ef80-adbe-11eb-9390-8677e1eaefe9.png">
+
+### 100000
+
+<img width="202" alt="스크린샷 2021-05-05 오후 3 27 30" src="https://user-images.githubusercontent.com/81538527/117108402-12754980-adbe-11eb-803f-59713f89e59b.png">
