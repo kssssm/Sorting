@@ -1,4 +1,4 @@
-# Sorting
+# Sorting Algorithm
 -------
 
 ## sort
@@ -123,7 +123,7 @@ public static void ShellSort(int[] num) {
 
 
 ## 실행 코드
--------
+
 ```java
 
 public static void main(String[] args) {
@@ -177,7 +177,7 @@ public static void main(String[] args) {
     }
     
 ```
--------
+
 
 ## 성능 평가
 
