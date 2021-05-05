@@ -177,12 +177,12 @@ public static void main(String[] args) {
     }
     
 ```
---------
+-------
 
 ## 성능 평가
 
 ### 배열의 **크기**에 따른 측정
--------
+--------
 #### 100
 
 <img width="184" alt="스크린샷 2021-05-05 오후 3 26 09" src="https://user-images.githubusercontent.com/81538527/117108378-08ebe180-adbe-11eb-8a67-af8c497fc3c6.png">
