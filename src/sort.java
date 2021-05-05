@@ -5,7 +5,7 @@ public class sort {
     public static void main(String[] args) {
 
         sort s = new sort();
-        System.out.print("배열크기를 정해주세요 : ");
+        System.out.print("배열크기 : ");
         Scanner sc = new Scanner(System.in);
         int ArraySize = sc.nextInt();
 
