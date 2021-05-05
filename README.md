@@ -1,8 +1,8 @@
 # Sorting
 -------
 
-
-## 1. Bubble sort
+## sort
+### 1. Bubble sort
 
 
 이웃하는 숫자를 비교하여 작은수를 앞으로 이동시키는 과정을 반복하여 정렬하는 알고리즘
@@ -27,7 +27,7 @@ public static void BubbleSort(int num[]) {
                 
 ```
 
-## 2.Insertion sort
+### 2.Insertion sort
 
 
 배열을 정렬된 부분(앞부분)과 정렬 안 된 부분(뒷부분)으로 나누고, 정렬 안 된 부분의 가장 왼쪽 원소를 정렬된 부분의 적절한 위치에 삽입하는 과정을 반복하여 정렬하는 알고리즘
@@ -61,7 +61,7 @@ public static void BubbleSort(int num[]) {
                 
 ```
 
-## 3.Selection sort
+### 3.Selection sort
 
 입력 배열 전체에서 최소값을 ‘선택’하여 배열의 0번 원소와 자리를 바꾸고, 다음엔 0번 원소를 제외한 나머지 원소에서 최솟값을 선택하여, 배열의 1번 원소와 자리를 바꾸는 과정을 반복하고 2개의 원소가 남으면 그 중에 최소값을 선택하여 자리를 바꾸어 정렬하는 알고리즘
 
@@ -85,7 +85,7 @@ public static void BubbleSort(int num[]) {
                 
                 
 ```
-## 4.Shell sort
+### 4.Shell sort
 
 
 삽입 정렬을 이용하여 배열 뒷부분의 크기가 작은 숫자를 앞부분으로 빠르게 이동시키는 동시에 앞부분의 크기가 큰 숫자는 뒷부분으로 이동시키는 과정을 반복하고 마지막에는 삽입 정렬을 수행하여 정렬하는 알고리즘
@@ -121,4 +121,59 @@ public static void ShellSort(int[] num) {
 
 
 
-###   
+## 실행 코드
+```java
+
+public static void main(String[] args) {
+
+        sort s = new sort();
+        System.out.print("배열크기 : ");
+        Scanner sc = new Scanner(System.in);
+        int ArraySize = sc.nextInt();
+
+        int[] num = new int[ArraySize];
+        for (int i = 0; i < ArraySize; i++) {
+            num[i] = (int) (Math.random() * ArraySize);
+        }// 배열크기를 입력 받아 난수로 배열을 채움
+        int[] tm1 = num;
+        int[] tm2 = num;
+        int[] tm3 = num;
+        int[] tm4 = num;// 동일한 조건에서 정렬을 해 시간을 측정하기 위해 난수배열을 따로 저장
+
+
+        long st1 = System.currentTimeMillis();
+        BubbleSort(tm1);
+        long ed1 = System.currentTimeMillis();
+
+        System.out.println();
+        System.out.println("걸린시간(Bubble): " + (ed1 - st1) + "ms");
+
+
+        long st2 = System.currentTimeMillis();
+        InsertionSort(tm2);
+        long ed2 = System.currentTimeMillis();
+
+
+        System.out.println();
+        System.out.println("걸린시간(Insertion): " + (ed2 - st2) + "ms");
+
+        long st3 = System.currentTimeMillis();
+        SelectionSort(tm3);
+        long ed3 = System.currentTimeMillis();
+
+        System.out.println();
+        System.out.println("걸린시간(Selection): " + (ed3 - st3) + "ms");
+
+        long st4 = System.currentTimeMillis();
+        ShellSort(tm4);
+        long ed4 = System.currentTimeMillis();
+
+        System.out.println();
+        System.out.println("걸린시간(Shell): " + (ed4 - st4) + "ms");
+
+
+    }
+    
+```
+
+## 
