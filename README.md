@@ -2,10 +2,10 @@
 -------
 
 ## sort
-### 1. Bubble sort
+###  Bubble sort
 
 
-이웃하는 숫자를 비교하여 작은수를 앞으로 이동시키는 과정을 반복하여 정렬하는 알고리즘
+이웃하는 숫자를 **비교**하여 작은수를 앞으로 이동시키는 과정을 반복하여 정렬하는 알고리즘
 
 <img width="612" alt="스크린샷 2021-05-05 오후 3 38 56" src="https://user-images.githubusercontent.com/81538527/117105528-2ec2b780-adb9-11eb-81e6-c7fc2136835a.png">
 
@@ -27,10 +27,10 @@ public static void BubbleSort(int num[]) {
                 
 ```
 
-### 2.Insertion sort
+### Insertion sort
 
 
-배열을 정렬된 부분(앞부분)과 정렬 안 된 부분(뒷부분)으로 나누고, 정렬 안 된 부분의 가장 왼쪽 원소를 정렬된 부분의 적절한 위치에 삽입하는 과정을 반복하여 정렬하는 알고리즘
+배열을 정렬된 부분(앞부분)과 정렬 안 된 부분(뒷부분)으로 **나누고**, 정렬 안 된 부분의 가장 왼쪽 원소를 정렬된 부분의 적절한 위치에 **삽입**하는 과정을 반복하여 정렬하는 알고리즘
 
 
 <img width="307" alt="스크린샷 2021-05-05 오후 3 40 43" src="https://user-images.githubusercontent.com/81538527/117106149-51090500-adba-11eb-9358-a5784b9a9409.png">
@@ -61,9 +61,9 @@ public static void BubbleSort(int num[]) {
                 
 ```
 
-### 3.Selection sort
+### Selection sort
 
-입력 배열 전체에서 최소값을 ‘선택’하여 배열의 0번 원소와 자리를 바꾸고, 다음엔 0번 원소를 제외한 나머지 원소에서 최솟값을 선택하여, 배열의 1번 원소와 자리를 바꾸는 과정을 반복하고 2개의 원소가 남으면 그 중에 최소값을 선택하여 자리를 바꾸어 정렬하는 알고리즘
+입력 배열 전체에서 최소값을 **선택**하여 배열의 0번 원소와 자리를 바꾸고, 다음엔 0번 원소를 제외한 나머지 원소에서 최솟값을 선택하여, 배열의 1번 원소와 자리를 바꾸는 과정을 반복하고 2개의 원소가 남으면 그 중에 최소값을 선택하여 자리를 바꾸어 정렬하는 알고리즘
 
 
 <img width="409" alt="스크린샷 2021-05-05 오후 3 39 59" src="https://user-images.githubusercontent.com/81538527/117106576-118ee880-adbb-11eb-9699-b2607a9d4f53.png">
@@ -85,10 +85,10 @@ public static void BubbleSort(int num[]) {
                 
                 
 ```
-### 4.Shell sort
+### Shell sort
 
 
-삽입 정렬을 이용하여 배열 뒷부분의 크기가 작은 숫자를 앞부분으로 빠르게 이동시키는 동시에 앞부분의 크기가 큰 숫자는 뒷부분으로 이동시키는 과정을 반복하고 마지막에는 삽입 정렬을 수행하여 정렬하는 알고리즘
+삽입 정렬을 이용하여 배열 뒷부분의 크기가 작은 숫자를 앞부분으로 **빠르게** 이동시키는 동시에 앞부분의 크기가 큰 숫자는 뒷부분으로 이동시키는 과정을 반복하고 마지막에는 삽입 정렬을 수행하여 정렬하는 알고리즘
 
 
 
@@ -175,22 +175,24 @@ public static void main(String[] args) {
     }
     
 ```
+--------
 
 ## 성능 평가
 
-배열의 크기에 따른 성능
-### 100
+### 배열의 **크기**에 따른 측정
+
+#### 100
 
 <img width="184" alt="스크린샷 2021-05-05 오후 3 26 09" src="https://user-images.githubusercontent.com/81538527/117108378-08ebe180-adbe-11eb-8a67-af8c497fc3c6.png">
 
-### 1000
+#### 1000
 
 <img width="190" alt="스크린샷 2021-05-05 오후 3 26 28" src="https://user-images.githubusercontent.com/81538527/117108391-0db09580-adbe-11eb-8905-01eba29b9723.png">
 
-### 10000
+#### 10000
 
 <img width="192" alt="스크린샷 2021-05-05 오후 3 26 44" src="https://user-images.githubusercontent.com/81538527/117108396-1012ef80-adbe-11eb-9390-8677e1eaefe9.png">
 
-### 100000
+#### 100000
 
 <img width="202" alt="스크린샷 2021-05-05 오후 3 27 30" src="https://user-images.githubusercontent.com/81538527/117108402-12754980-adbe-11eb-803f-59713f89e59b.png">
